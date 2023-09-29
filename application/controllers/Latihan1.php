@@ -2,14 +2,18 @@
 class Latihan1 extends CI_Controller
 {
     public function index()
-    { 
-        echo "<h1>Biodata</h1>";
-        echo "Nama : Rifdah Fauziyah
-        <p>NIM : 19220072
-        <p>No.Hp : 0897777777
-        <p>Kelas : 19.3A.24
-        <p>Hobi : Travelling
-        <p>Alamat : Cikarang Selatan, Bekasi
-        <p>Umur : 17 tahun";
+    {
+        echo "Selamat.. Selamat belajar Web Programming";
+        //$this->load->view('view-latihan1');
+    }
+    public function penjumlahan($n1, $n2)
+    {
+        $this->load->model('Model_latihan1');
+
+        $data['nilai1'] = $n1;
+        $data['nilai2'] = $n2;
+        $data['hasil'] = $this->Model_latihan1->jumlah($n1, $n2);
+
+        $this->load->view('view-latihan1', $data);
     }
 }

@@ -17,3 +17,4 @@ class Latihan1 extends CI_Controller
         $this->load->view('view-latihan1', $data);
     }
 }
+?>

@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Form Input Mata Kuliah</Input></title>
+    <title>Form Input Mata Kuliah</title>
 </head>
 
 <body>
@@ -20,14 +20,16 @@
                 <th>Kode MK</th>
                 <th>:</th>
                 <td>
-                    <input type="text" name="kode" id="kode">
+                    <input type="text" name="kode" id="kode" placeholder="Required">
+                    <div class="col-sm-6 col-danger"> <?= form_error('kode'); ?></div>
                 </td>
             </tr>
             <tr>
                 <th>Nama MK</th>
                 <th>:</th>
                 <td>
-                    <input type="text" name="nama" id="nama">
+                    <input type="text" name="nama" id="nama" placeholder="Input">
+                    <div class="col-sm-6 col-danger"> <?= form_error('nama'); ?></div>
                 </td>
             </tr>
             <tr>
